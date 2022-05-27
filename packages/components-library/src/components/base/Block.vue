@@ -1,16 +1,19 @@
 <template>
-  <a-button v-bind="props.attr" v-html="props.solt"></a-button>
+  <div class="z-block" v-bind="props.attr">
+    <slot>
+      <span v-html="props.solt"></span>
+    </slot>
+  </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { defineProps } from "vue";
 defineProps({
   props: {
     type: Object,
     default: () => {
       return {
-        attr: {},
-        solt: "按钮"
+        solt: "容器block"
       };
     }
   }

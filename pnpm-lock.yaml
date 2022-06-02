@@ -13,6 +13,7 @@ importers:
       '@vue/eslint-config-typescript': ^9.1.0
       ant-design-vue: ^3.2.4
       babel-plugin-import: ^1.13.5
+      commander: ^9.2.0
       core-js: ^3.8.3
       eslint: ^7.32.0
       eslint-config-prettier: ^8.3.0
@@ -42,6 +43,7 @@ importers:
       '@vue/cli-service': 5.0.4_cc3990c57a58114ef86b8f78bf3cf9e8
       '@vue/eslint-config-typescript': 9.1.0_d018c6e76ddc2a8fae480cc05a9949a2
       babel-plugin-import: 1.13.5
+      commander: registry.npmmirror.com/commander/9.3.0
       eslint: 7.32.0
       eslint-config-prettier: 8.5.0_eslint@7.32.0
       eslint-plugin-prettier: 4.0.0_2544802fe0b6e1e28814bd742f96f471
@@ -56,17 +58,17 @@ importers:
   packages/components-library:
     specifiers:
       '@vue/cli-plugin-typescript': ~5.0.0
+      monaco-editor: ^0.33.0
+      monaco-editor-webpack-plugin: ^7.0.1
+    dependencies:
+      monaco-editor: registry.npmmirror.com/monaco-editor/0.33.0
+      monaco-editor-webpack-plugin: registry.npmmirror.com/monaco-editor-webpack-plugin/7.0.1_monaco-editor@0.33.0
     devDependencies:
       '@vue/cli-plugin-typescript': 5.0.4_64afb08336418963fcc0609187effc49
 
   packages/page-editor:
     specifiers:
       '@vue/cli-plugin-typescript': ~5.0.0
-      monaco-editor: ^0.33.0
-      monaco-editor-webpack-plugin: ^7.0.1
-    dependencies:
-      monaco-editor: 0.33.0
-      monaco-editor-webpack-plugin: 7.0.1_monaco-editor@0.33.0
     devDependencies:
       '@vue/cli-plugin-typescript': 5.0.4_64afb08336418963fcc0609187effc49
 
@@ -2954,20 +2956,6 @@ packages:
     resolution: {integrity: sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==}
     dev: true
 
-  /commander/2.20.3:
-    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
-    dev: true
-
-  /commander/7.2.0:
-    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
-    engines: {node: '>= 10'}
-    dev: true
-
-  /commander/8.3.0:
-    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
-    engines: {node: '>= 12'}
-    dev: true
-
   /commondir/1.0.1:
     resolution: {integrity: sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=}
     dev: true
@@ -4202,7 +4190,7 @@ packages:
     dependencies:
       camel-case: 4.1.2
       clean-css: 5.3.0
-      commander: 8.3.0
+      commander: registry.npmmirror.com/commander/8.3.0
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
@@ -4676,6 +4664,7 @@ packages:
       big.js: registry.npmmirror.com/big.js/5.2.2
       emojis-list: registry.npmmirror.com/emojis-list/3.0.0
       json5: registry.npmmirror.com/json5/2.2.1
+    dev: true
 
   /locate-path/5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -4895,20 +4884,6 @@ packages:
   /module-alias/2.2.2:
     resolution: {integrity: sha512-A/78XjoX2EmNvppVWEhM2oGk3x4lLxnkEA4jTbaK97QKSDjkIoOsKQlfylt/d3kKKi596Qy3NP5XrXJ6fZIC9Q==}
     dev: true
-
-  /monaco-editor-webpack-plugin/7.0.1_monaco-editor@0.33.0:
-    resolution: {integrity: sha512-M8qIqizltrPlIbrb73cZdTWfU9sIsUVFvAZkL3KGjAHmVWEJ0hZKa/uad14JuOckc0GwnCaoGHvMoYtJjVyCzw==}
-    peerDependencies:
-      monaco-editor: '>= 0.31.0'
-      webpack: ^4.5.0 || 5.x
-    dependencies:
-      loader-utils: 2.0.2
-      monaco-editor: 0.33.0
-    dev: false
-
-  /monaco-editor/0.33.0:
-    resolution: {integrity: sha512-VcRWPSLIUEgQJQIE0pVT8FcGBIgFoxz7jtqctE+IiCxWugD0DwgyQBcZBhdSrdMC84eumoqMZsGl2GTreOzwqw==}
-    dev: false
 
   /mrmime/1.0.0:
     resolution: {integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==}
@@ -6419,7 +6394,7 @@ packages:
     hasBin: true
     dependencies:
       '@trysound/sax': 0.2.0
-      commander: 7.2.0
+      commander: registry.npmmirror.com/commander/7.2.0
       css-select: 4.3.0
       css-tree: 1.1.3
       csso: 4.2.0
@@ -6478,7 +6453,7 @@ packages:
     hasBin: true
     dependencies:
       acorn: 8.7.1
-      commander: 2.20.3
+      commander: registry.npmmirror.com/commander/2.20.3
       source-map: registry.npmmirror.com/source-map/0.8.0-beta.0
       source-map-support: 0.5.21
     dev: true
@@ -6803,7 +6778,7 @@ packages:
       acorn: 8.7.1
       acorn-walk: 8.2.0
       chalk: 4.1.2
-      commander: 7.2.0
+      commander: registry.npmmirror.com/commander/7.2.0
       gzip-size: 6.0.0
       lodash: 4.17.21
       opener: 1.5.2
@@ -7111,6 +7086,33 @@ packages:
     version: 3.7.2
     dev: true
 
+  registry.npmmirror.com/commander/2.20.3:
+    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/commander/-/commander-2.20.3.tgz}
+    name: commander
+    version: 2.20.3
+    dev: true
+
+  registry.npmmirror.com/commander/7.2.0:
+    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/commander/-/commander-7.2.0.tgz}
+    name: commander
+    version: 7.2.0
+    engines: {node: '>= 10'}
+    dev: true
+
+  registry.npmmirror.com/commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/commander/-/commander-8.3.0.tgz}
+    name: commander
+    version: 8.3.0
+    engines: {node: '>= 12'}
+    dev: true
+
+  registry.npmmirror.com/commander/9.3.0:
+    resolution: {integrity: sha512-hv95iU5uXPbK83mjrJKuZyFM/LBAoCV/XhVGkS5Je6tl7sxr6A0ITMw5WoRV46/UaJ46Nllm3Xt7IaJhXTIkzw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/commander/-/commander-9.3.0.tgz}
+    name: commander
+    version: 9.3.0
+    engines: {node: ^12.20.0 || >=14}
+    dev: true
+
   registry.npmmirror.com/consolidate/0.15.1:
     resolution: {integrity: sha512-DW46nrsMJgy9kqAbPt5rKaCr7uFtpo4mSUvLHIUbJEjm0vo+aY5QLwBUq3FK4tRnJr/X0Psc0C4jf/h+HtXSMw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/consolidate/-/consolidate-0.15.1.tgz}
     name: consolidate
@@ -7204,6 +7206,17 @@ packages:
       json5: registry.npmmirror.com/json5/1.0.1
     dev: true
 
+  registry.npmmirror.com/loader-utils/2.0.2:
+    resolution: {integrity: sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/loader-utils/-/loader-utils-2.0.2.tgz}
+    name: loader-utils
+    version: 2.0.2
+    engines: {node: '>=8.9.0'}
+    dependencies:
+      big.js: registry.npmmirror.com/big.js/5.2.2
+      emojis-list: registry.npmmirror.com/emojis-list/3.0.0
+      json5: registry.npmmirror.com/json5/2.2.1
+    dev: false
+
   registry.npmmirror.com/lru-cache/4.1.5:
     resolution: {integrity: sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lru-cache/-/lru-cache-4.1.5.tgz}
     name: lru-cache
@@ -7255,6 +7268,25 @@ packages:
     name: minimist
     version: 1.2.6
     dev: true
+
+  registry.npmmirror.com/monaco-editor-webpack-plugin/7.0.1_monaco-editor@0.33.0:
+    resolution: {integrity: sha512-M8qIqizltrPlIbrb73cZdTWfU9sIsUVFvAZkL3KGjAHmVWEJ0hZKa/uad14JuOckc0GwnCaoGHvMoYtJjVyCzw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/monaco-editor-webpack-plugin/-/monaco-editor-webpack-plugin-7.0.1.tgz}
+    id: registry.npmmirror.com/monaco-editor-webpack-plugin/7.0.1
+    name: monaco-editor-webpack-plugin
+    version: 7.0.1
+    peerDependencies:
+      monaco-editor: '>= 0.31.0'
+      webpack: ^4.5.0 || 5.x
+    dependencies:
+      loader-utils: registry.npmmirror.com/loader-utils/2.0.2
+      monaco-editor: registry.npmmirror.com/monaco-editor/0.33.0
+    dev: false
+
+  registry.npmmirror.com/monaco-editor/0.33.0:
+    resolution: {integrity: sha512-VcRWPSLIUEgQJQIE0pVT8FcGBIgFoxz7jtqctE+IiCxWugD0DwgyQBcZBhdSrdMC84eumoqMZsGl2GTreOzwqw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/monaco-editor/-/monaco-editor-0.33.0.tgz}
+    name: monaco-editor
+    version: 0.33.0
+    dev: false
 
   registry.npmmirror.com/needle/2.9.1:
     resolution: {integrity: sha512-6R9fqJ5Zcmf+uYaFgdIHmLwNldn5HbK8L5ybn7Uz+ylX/rnOsSp1AHcvQSrCaFN+qNM1wpymHqD7mVasEOlHGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/needle/-/needle-2.9.1.tgz}

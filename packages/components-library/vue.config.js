@@ -1,5 +1,6 @@
 const { defineConfig } = require("@vue/cli-service");
 const share = require("../../scripts/share");
+const MonacoWebpackPlugin = require("monaco-editor-webpack-plugin");
 module.exports = defineConfig({
   publicPath: "http://localhost:8001",
   css: {
@@ -27,6 +28,11 @@ module.exports = defineConfig({
     }
   },
   chainWebpack: config => {
+    config.plugin("monaco").use(
+      new MonacoWebpackPlugin({
+        languages: ["javascript", "json", "css", "html", "typescript"]
+      })
+    );
     config
       .plugin("module-feaderation-plugin")
       .use(require("webpack").container.ModuleFederationPlugin, [

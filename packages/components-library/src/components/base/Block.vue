@@ -1,7 +1,7 @@
 <template>
   <div class="z-block" v-bind="props.attr">
     <slot>
-      <span v-html="props.solt"></span>
+      <span v-html="props.slot" v-if="props.slot"></span>
     </slot>
   </div>
 </template>
@@ -13,7 +13,7 @@ defineProps({
     type: Object,
     default: () => {
       return {
-        solt: "容器block"
+        slot: "容器block"
       };
     }
   }

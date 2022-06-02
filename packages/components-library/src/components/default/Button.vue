@@ -1,16 +1,19 @@
 <template>
-  <a-button v-bind="props.attr" v-html="props.solt"></a-button>
+  <a-button v-bind="props.attr" v-html="props.slot" v-on="events"></a-button>
 </template>
 
 <script setup lang="ts">
 import { defineProps } from "vue";
+import useEvent from "@/utils/event";
+const events = useEvent();
 defineProps({
   props: {
     type: Object,
     default: () => {
       return {
         attr: {},
-        solt: "按钮"
+        slot: "按钮",
+        event: {}
       };
     }
   }

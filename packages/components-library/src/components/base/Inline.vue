@@ -1,7 +1,7 @@
 <template>
   <div class="z-inline" v-bind="props.attr">
     <slot>
-      <span v-html="props.solt"></span>
+      <span v-html="props.slot"></span>
     </slot>
   </div>
 </template>
@@ -13,7 +13,8 @@ defineProps({
     type: Object,
     default: () => {
       return {
-        solt: "容器-inline"
+        attr: {},
+        slot: "容器-inline"
       };
     }
   }
